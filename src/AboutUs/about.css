@@ -1,0 +1,45 @@
+.about-us{
+    background-image: url('./about.jpg');
+    background-size: cover;
+    padding-top: 70px;
+    margin-top: 20px;
+    height: 640px;
+}
+.about{
+    width: 50%;
+}
+.text{
+    padding: 15px;
+    text-align: left;
+    color: black;
+    font-size: 20px;
+}
+.gallery{
+    justify-content:center;
+}
+.gallery-2{
+    margin-top: 30px;
+    justify-content:center;
+}
+.item{
+    margin: 20px;
+}
+.item:hover{
+    margin: 7px;
+    box-shadow: 3px 4px 6px gray;
+}
+@media only screen and (max-width: 688px) {
+    .gallery{
+        flex-direction: column;
+    }
+    .gallery-2{
+        flex-direction: column;
+    }
+    .about-us{
+        box-shadow: 3px 4px 6px gray;
+    }
+    .about{
+        background-color: gainsboro;
+        width: 100%;
+    }
+}

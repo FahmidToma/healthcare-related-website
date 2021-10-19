@@ -1,0 +1,11 @@
+.link{
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+.site-link{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding-right: 15px;
+}

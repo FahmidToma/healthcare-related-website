@@ -1,0 +1,27 @@
+.each-service{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.totals{
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.total{
+    background-color: rgb(17, 17, 17);
+    margin: 15px;
+    box-shadow: 3px 4px 6px rgb(149, 149, 149);
+}
+.text-home{
+    color: white;
+    font-size: 25px;
+    padding: 30px;
+}
+
+
+@media only screen and (max-width: 688px) {
+    .each-service{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

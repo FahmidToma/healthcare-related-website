@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "First Aid",
+    "cover": "https://i0.wp.com/www.eastmojo.com/wp-content/uploads/2021/09/pexels-roger-brown-5664736-1.jpg?fit=1200%2C675&ssl=1",
+    "description": "In ay emergency first aid is provided with exact need.",
+    "pricing": 50
+  },
+  {
+    "id": 2,
+    "name": "Diagonistic Care",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbJ8j-uNj4vLFwW1-whgbj_Wo8vzYCpzK1ww&usqp=CAU",
+    "description": "Valuable eqipments are used for diagonostic care.We deliver the result in time",
+    "pricing": 80
+  },
+  {
+    "id": 3,
+    "name": "Skilled Doctors",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp4vPuK86bAR4LT_h8bFR2ECQUEIMfRbvvvjzPeYJItY4r8EHJhfF2_XNkGqzbSVoBXQ4&usqp=CAU",
+    "description": "Expret doctors from every sectors are dedicated for our patients",
+    "pricing": 200
+  },
+  {
+    "id": 4,
+    "name": "Ambulance Service",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfLAuASKCPejpdOH46srwzoSrfQ-6_7RIk2Bmwaea32I1gXEBVJ0-L7i3MWgo0y4IyEw8&usqp=CAU",
+    "description": "This service is available 24 hours whenever neded with enough amount of ambulances",
+    "pricing": 100
+  },
+  {
+    "id": 5,
+    "name": "ICU Service",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5h8DkL9zjGizzJ5XoEMKUpWg_D9U1zTyt7ST1BwgGpAf4A2OfwrjU1aRsAD6C2jCTK38&usqp=CAU",
+    "description": "Intensive care unit is a sepcial service of us that is provided in extreme patients",
+    "pricing": 250
+  },
+  {
+    "id": 6,
+    "name": "Mental Care",
+    "cover": "https://images.squarespace-cdn.com/content/v1/5452d441e4b0c188b51fef1a/1608653779312-P3IM7SVB5IRPRTHXYKZ7/mental-health-wellness-during-covid-19.jpg",
+    "description": "Services devoted to the improvement of mental health in people with mental disorders or problems.",
+    "pricing": 70
+  }
+]

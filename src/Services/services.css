@@ -1,0 +1,13 @@
+.all-services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.show-services{
+    justify-content: center;
+}
+@media only screen and (max-width: 688px) {
+    .all-services{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

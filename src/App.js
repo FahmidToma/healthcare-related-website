@@ -1,23 +1,50 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router,Switch, Route } from 'react-router-dom';
+import Header from './Header/header';
+import Home from './Home/home';
+import Services from './Services/services';
+import About from './AboutUs/about';
+import Footer from './Footer/footer';
+import Contact from './Contact/contact';
+import Notfound from './404/notfound';
+import AuthProvider from './Context/authprovider';
+import Details from './Details/details';
+import Login from './login/login';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AuthProvider>
+      <Router>
+      <Header></Header>
+      <Switch>
+        <Route exact path='/home'>
+          <Home></Home>
+        </Route>
+        <Route exact path='/services'>
+          <Services></Services>
+        </Route>
+        <Route exact  path='/aboutus'>
+          <About></About>
+        </Route>
+        <Route exact path='/contact'>
+          <Contact></Contact>
+        </Route>
+        <Route exact path='/booking/:serviceId'>
+          <Details></Details>
+        </Route>
+        <Route exact path='/login'>
+          <Login></Login>
+        </Route>
+        <Route exact path='/*'>
+          <Notfound></Notfound>
+        </Route>
+      </Switch>
+      <Footer></Footer>
+      </Router>
+      </AuthProvider>
     </div>
   );
 }
