@@ -4,9 +4,11 @@ import './details.css';
 
  const Details = () =>{
      const {serviceId} = useParams();
+
      return (
          <div className='details'>
              <h1>Details: {serviceId}</h1>
+             <p>this is it</p>
          </div>
      );
  };

@@ -1,6 +1,6 @@
 # Medicscape
 
-Live site: <a href=''>Click Here</a>
+Live site: <a href='https://admiring-wozniak-12b42d.netlify.app/'>Click Here</a>
 
 ### About My website
 

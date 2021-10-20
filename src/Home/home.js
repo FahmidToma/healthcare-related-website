@@ -10,7 +10,7 @@ const Home= () =>{
 
     const [features,setFeatures] = useState([]);
     useEffect(() =>{
-        fetch('./Featured.JSON')
+        fetch('/Featured.JSON')
         .then(res => res.json()
         .then(data => setFeatures(data)));
     },[])
@@ -57,7 +57,7 @@ const Home= () =>{
 
             </div>
             <div className='feature ps-5'>
-                <h2 className='p-5'>Services We Give You</h2>
+                <h2 className='p-3'>Services We Give You</h2>
                 <div className='each-service' style={{}}>
                 {
                     features.map( sixService => <Featured

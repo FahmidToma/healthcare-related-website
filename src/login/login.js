@@ -1,11 +1,15 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import './login.css';
+import useAuth from "../hooks/useAuth";
+
  const Login =()=>{
+     const {signInGoogle} = useAuth();
+
      return(
-         <div>
+         <div className='log-in'>
              <h1>Please Log in</h1>
-             <Link to='/login'><Button variant='success'>Log In</Button></Link>
+             <button onClick={signInGoogle} className='btn btn-warning'>Log In</button>
          </div>
      );
  };

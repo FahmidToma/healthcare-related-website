@@ -1,6 +1,6 @@
 import React from "react";
 import './header.css';
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Button, ButtonGroup, Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 
@@ -8,19 +8,24 @@ const Header= () =>{
     const {user, logOut} = useAuth;
     return(
         <div className='header'>
-            <Navbar fixed="top" bg="dark" variant="dark" >
+            <Navbar fixed="top" bg="dark" variant="dark">
             <Container>
-                <Nav className="me-auto">
-                <Link className='site-link' to="/home"><strong>Medicscape</strong></Link>
-                <Link className='link' to="/home">Home</Link>
-                <Link className='link' to="/aboutus">About Us</Link>
-                <Link className='link' to="/services">Services</Link>
-                <Link className='link' to="/contact">Contact</Link>
-                <Link className='link' to="/login">Log in</Link>
+                <Navbar.Brand href="/home"><strong>Medicscape</strong></Navbar.Brand>
+                <Navbar.Toggle />
+                <Navbar.Collapse className="justify-content-end">
+                    <Nav.Link as={Link} to='/home'>Home</Nav.Link>
+                    <Nav.Link as={Link} to='/aboutus'>About Us</Nav.Link>
+                    <Nav.Link as={Link} to='/services'>Services</Nav.Link>
+                    <Nav.Link as={Link} to='/contact'>Contact</Nav.Link>
+                    {user?.email ?
+                    <Button variant='light'>LogOut</Button> :
+                    <Nav.Link as={Link} to='/login'>LogIn</Nav.Link>
+                    }
+
                 <Navbar.Text>
-                    Signed in as: <a href='#login'>{user.displayname}</a>
+                    Signed in as: <a href="/login">{user?.displayEmail}</a>
                 </Navbar.Text>
-                </Nav>
+                </Navbar.Collapse>
             </Container>
             </Navbar>
         </div>

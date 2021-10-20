@@ -12,6 +12,7 @@ import Notfound from './404/notfound';
 import AuthProvider from './Context/authprovider';
 import Details from './Details/details';
 import Login from './login/login';
+import PrivateRoute from './login/Private-route/private-route';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       <Router>
       <Header></Header>
       <Switch>
+      <Route path='/'>
+          <Home></Home>
+        </Route>
         <Route exact path='/home'>
           <Home></Home>
         </Route>
@@ -32,13 +36,13 @@ function App() {
         <Route exact path='/contact'>
           <Contact></Contact>
         </Route>
-        <Route exact path='/booking/:serviceId'>
+        <PrivateRoute path='/details/:serviceId'>
           <Details></Details>
-        </Route>
+        </PrivateRoute>
         <Route exact path='/login'>
           <Login></Login>
         </Route>
-        <Route exact path='/*'>
+        <Route exact path='*'>
           <Notfound></Notfound>
         </Route>
       </Switch>

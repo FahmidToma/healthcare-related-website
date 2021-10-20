@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
              <img src={cover}/>
              <h4 className='pt-3'>{name}</h4>
              <p className='px-5'>{description}</p>
-             <Link to={`/details/${id}`}><Button variant="primary">Details</Button></Link>
+             <Link to={`/details/${id}`}><Button variant="dark">Details</Button></Link>
          </div>
      );
  };
